@@ -1,0 +1,31 @@
+body {
+   /* background: #a0c4ff; */
+   background: #bdb2ff;
+
+}
+
+.inputs {
+   background: white;
+   max-width: 62rem;
+   height: 30rem;
+   border-radius: 1rem;
+   margin: 1.2rem auto 0 auto;
+   text-align: center;
+}
+
+.title {
+   padding: 1rem 0 0 0;
+   font-size: 3rem;
+   
+}
+
+.question-input {
+   /* margin-top: .3rem; */
+   width: 40rem;
+   outline: none;
+   border: none;
+   border-bottom: 2px solid black;
+   font-size: 1.4rem;
+   
+}
+
