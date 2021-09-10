@@ -1,25 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=
-   , initial-scale=1.0">
-   <title>Quiz Maker</title>
-   <link rel="stylesheet" href="index.css">
-</head>
-<body>
-   <div class="top">
-      <div class="inputs">
-         <h1 class="title">Quiz Maker</h1>
-         <form action="">
-            <input type="text" placeholder="Question" class="question-input">
-         </form>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=
+   , initial-scale=1.0"
+		/>
+		<title>Quiz Maker</title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="top-container">
+			<div class="inputs-part">
+				<h1 class="logo">Quiz Maker</h1>
+				<form action="" class="form">
+					<input
+						type="text"
+						placeholder="Question"
+						class="que-input input"
+					/>
+					<input
+						type="text"
+						placeholder="Option A"
+						class="a-input input"
+					/>
+					<input
+						type="text"
+						placeholder="Option B"
+						class="b-input input"
+					/>
+					<input
+						type="text"
+						placeholder="Option C"
+						class="c-input input"
+					/>
+					<input
+						type="text"
+						placeholder="Option D"
+						class="d-input input"
+					/>
+					<button class="submit">Add Question</button>
+				</form>
+			</div>
 
-      <!-- questions cards -->
-
-
-   </div>
-</body>
+			<!-- Questions Card Section -->
+			<div class="questions-part">
+				<div class="generate-quiz-container">
+					<button class="generate-quiz">Generate Quiz</button>
+				</div>
+				<div class="que-card">
+					<p class="question">
+						1. This is a demo question, few words for filler?
+					</p>
+					<div class="que-card-options">
+						<p>A. lightRed</p>
+						<p>B. blueSaphire</p>
+						<p>C. lightSeaGreen</p>
+						<p>D. whiteSmoke</p>
+					</div>
+				</div>
+				<div class="que-card">
+					<p class="question">
+						1. This is a demo question, few words for filler?
+					</p>
+					<div class="que-card-options">
+						<p>A. lightRed</p>
+						<p>B. blueSaphire</p>
+						<p>C. lightSeaGreen</p>
+						<p>D. whiteSmoke</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
