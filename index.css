@@ -9,7 +9,7 @@
 body{
    margin: 0;
    font-family: 'Montserrat', sans-serif;
-   overflow-x: hidden;
+   overflow-x: hidden;+
 }
 
 .top-container {
@@ -25,12 +25,12 @@ body{
 }
 
 .logo{
-   font-size: 3.5rem;
+   font-size: 3rem;
    color: rgb(56, 56, 56);
 }
 
 .form{
-   height: 80%;
+   height: 77%;
 
 }
 
@@ -48,19 +48,60 @@ body{
 
 .que-input{
    width: 70%;
+}
 
+.options-input-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   
+}
+
+.options-input-grid > * {
+   margin: 3rem auto;
+   background: var(--inputsPart);
+   border: none;
+   outline: none;
+   border-bottom: 3px solid white;
+   text-align: center;
+   font-size: 1.4rem;
+   padding-bottom: .5rem;
+}
+
+.dropdown {
+   float: left;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.label{
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+#corectAnswer {
+   width: 7rem;
+   height: 3rem;
+   background: white;
+   border: none;
+   outline: none;
+   text-align: center;
+   font-size: 1.1rem;
+   margin-right: 1.5rem;
+   border-radius: 4px;
+   box-shadow: 2px 2px 0px 2px rgb(56, 56, 56);
 }
 
 .submit{
-   width: 17rem;
-   height: 4.5rem;
+   width: 13rem;
+   height: 3rem;
    background: rgb(56, 56, 56);
    color: white;
    border: none;
    outline: none;
-   font-size: 1.5rem;
+   font-size: 1.4rem;
    border-radius: 4px;
-   box-shadow: 3px 3px 0px 2px rgb(255, 255, 255);
+   box-shadow: 2px 2px 0px 2px rgb(255, 255, 255);
 }
 .submit:hover{
    cursor: pointer;
@@ -84,15 +125,15 @@ body{
 }
 
 .generate-quiz{
-   height: 4.5rem;
-   width: 17rem;
+   height: 3rem;
+   width: 13rem;
    background: rgb(56, 56, 56);
    color: white;
    border: none;
    outline: none;
-   font-size: 1.5rem;
+   font-size: 1.4rem;
    border-radius: 4px;
-   box-shadow: 3px 3px 0px 2px rgb(255, 255, 255);
+   box-shadow: 2px 2px 0px 2px rgb(255, 255, 255);
    
 }
 .generate-quiz:hover{
@@ -122,7 +163,17 @@ body{
    }
 
    .inputs-part {
-      padding-bottom: 2.5rem;
+      padding-bottom: 4.5rem;
+   }
+
+   .options-input-grid{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      
+   }
+
+   .label, #corectAnswer{
+      margin-bottom: 4rem;
    }
 
    .que-card{

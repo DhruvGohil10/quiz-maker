@@ -27,34 +27,29 @@
 						placeholder="Question"
 						class="que-input input"
 					/>
-					<input
-						type="text"
-						placeholder="Option A"
-						class="a-input input"
-					/>
-					<input
-						type="text"
-						placeholder="Option B"
-						class="b-input input"
-					/>
-					<input
-						type="text"
-						placeholder="Option C"
-						class="c-input input"
-					/>
-					<input
-						type="text"
-						placeholder="Option D"
-						class="d-input input"
-					/>
-					<button class="submit">Add Question</button>
+					<div class="options-input-grid">
+						<input type="text" placeholder="Option A" class="a-input" />
+						<input type="text" placeholder="Option B" class="b-input" />
+						<input type="text" placeholder="Option C" class="c-input" />
+						<input type="text" placeholder="Option D" class="d-input" />
+					</div>
+					<div class="dropdown">
+						<label class="label" for="corectAnswer">Correct Option</label>
+						<select id="corectAnswer">
+							<option value="optionA">Option A</option>
+							<option value="optionB">Option B</option>
+							<option value="optionC">Option C</option>
+							<option value="optionD">Option C</option>
+						</select>
+						<button class="submit">Add Question</button>
+					</div>
 				</form>
 			</div>
 
 			<!-- Questions Card Section -->
 			<div class="questions-part">
 				<div class="generate-quiz-container">
-					<button class="generate-quiz">Generate Quiz</button>
+					<button class="generate-quiz">Send Questions</button>
 				</div>
 				<div class="que-card">
 					<p class="question">
@@ -80,5 +75,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="index.js"></script>
 	</body>
 </html>
